@@ -23,9 +23,6 @@ int main(int argc, char** argv) {
     adb::start_server();
     timing::seconds_sleep(3);
     
-    miniadb::init();
-    getchar();
-    
     example::run();
 
     return 0;
