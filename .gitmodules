@@ -1,0 +1,6 @@
+[submodule "src/color-console"]
+	path = src/color-console
+	url = https://github.com/aafulei/color-console.git
+[submodule "src/minitouch"]
+	path = src/minitouch
+	url = https://github.com/openstf/minitouch.git
