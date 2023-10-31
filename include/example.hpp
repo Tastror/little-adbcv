@@ -17,7 +17,7 @@ namespace example {
         const std::string current_path = format::prefix_right_slash(cmd::get_current_path());
 
         const std::string screen_save_path = current_path + "temp.png";
-        const std::string ref_img_dir = current_path + "img";
+        const std::string ref_img_dir = current_path + "../img";
 
         const double wait_time = 0.5;
 
@@ -72,7 +72,7 @@ namespace example {
         // use util::read_ref_name() and util::wait_cap()
 
         util::read_ref_name("example");
-        util::wait_cap(vision::LEFT_UP_SCREEN, 5);
+        util::wait_cap(vision::FULL_SCREEN, 5);
         if (util::last_wait_success) logging::warning("example 3.1 matched");
         else logging::warning("example 3.1 did not matched");
         adb::tap(vision::get_match_shift());
