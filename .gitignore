@@ -1,3 +1,6 @@
-*.exe
 .vscode
+.cache
+build/
+bin/
+
 temp.png
